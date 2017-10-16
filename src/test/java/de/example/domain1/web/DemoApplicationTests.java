@@ -1,5 +1,6 @@
-package de.dpd.demo;
+package de.example.domain1.web;
 
+import de.example.domain1.model.Greeting;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

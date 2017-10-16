@@ -1,7 +1,5 @@
-package de.dpd.demo;
+package de.example.domain1.config;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 /*import org.springframework.security.authentication.RememberMeAuthenticationToken;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -14,13 +12,12 @@ import org.springframework.security.core.context.SecurityContextImpl;
 import org.springframework.security.web.context.HttpRequestResponseHolder;
 import org.springframework.security.web.context.SecurityContextRepository;*/
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.Arrays;
-
 //@Configuration
 //@EnableWebSecurity
 public class WebSecurityConfig { //extends WebSecurityConfigurerAdapter {
+
+    //TODO: verschiedene Möglichkeiten von Konfigurationen erklären
+
     /*@Override
     protected void configure(HttpSecurity http) throws Exception {
         http

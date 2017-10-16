@@ -1,4 +1,4 @@
-package de.dpd.demo;
+package de.example.domain1.model;
 
 import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.Size;

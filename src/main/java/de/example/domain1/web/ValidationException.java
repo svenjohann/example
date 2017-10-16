@@ -1,4 +1,4 @@
-package de.dpd.demo;
+package de.example.domain1.web;
 
 import org.springframework.validation.BindingResult;
 
