@@ -1,17 +1,13 @@
 package de.example.domain1.web;
 
 import de.example.domain1.model.Greeting;
-import org.springframework.boot.Banner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-@SpringBootApplication
 @RestController
-public class DemoApplication {
+public class DemoController {
 
 	@RequestMapping("/greeting")
 	public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
@@ -24,11 +20,5 @@ public class DemoApplication {
 			throw new ValidationException(bindingResult);
 		}
 		return "OK";
-	}
-
-	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(DemoApplication.class);
-		app.setBannerMode(Banner.Mode.OFF);
-		app.run(args);
 	}
 }
